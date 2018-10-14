@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A hangman game">
+    <meta name="author" content="Joe Yardley">
+
+    <title>Title</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="text-center">
+<div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand">Hangman</h3>
+        </div>
+    </header>
+
+
+    <main role="main" class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="p-2 col-xs-12 col-lg-6">
+                    <canvas id="hangman">Canvas is not supported in your browser</canvas>
+                </div>
+                <div class="p-2 col-xs-12 col-lg-6">
+                    <div id="alphabet-buttons"></div>
+                    <div id="gameInfo" class="row">
+                        <div class="col-md-4">
+                            <h2>Lives: <span id="lives">11</span></h2>
+                        </div>
+                        <div class="col-md-4">
+                            <button id="resetGame" class="btn btn-lg btn-primary">Reset</button>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Wins: <span id="wins">0</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul id="word-letters"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Hangman Game by Joe Yardley.</p>
+        </div>
+    </footer>
+</div>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/main.js" type="module"></script>
+</html>
